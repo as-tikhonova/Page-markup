@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Quiz-box: Главная</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="container">
-            <!-- Header -->
+        <!-- Header -->
+        <div class="container header__container">
             <header class="header">
                 <!--logo-->
-                <a href="/" class="logo">
+                <a href="/" class="header-logo logo">
                     Quiz-box
                 </a>
                 <!--navigation TODO-->
@@ -33,16 +34,17 @@
                 <!--contacts-->
                 <address class="header__contacts">
                     <a href="tel:+78007003030" class="header__phone">8 800 700 30 30</a>
-                    <p class="header__schedule">
+                    <div class="header__workhours">
                         График работы
-                    </p>
-                    <div class="header__workhours"></div>
+                    </div>
                 </address>
             </header>
+        </div>
 
-            <!-- Main page -->
-            <main class="main">
-                <!-- description -->
+        <!-- Main page -->
+        <main class="main">
+            <!-- description -->
+            <div class="container hero__container">
                 <section class="description">
                     <h1 class="title">Интеллектуальный вечер для шумной компании</h1>
                     <div class="description__text">
@@ -52,219 +54,219 @@
                         Подробнее
                     </a>
                 </section>
+            </div>
 
-                <!-- new games -->
+            <!-- new games -->
+            <div class="container new-games__container">
                 <section class="new-games">
                     <div class="new-games__title">
                         <h2 class="subtitle">Новинки недели</h2>
-                        <img src="" alt="new" class="new-games__logo">
+                        <img src="./img/icons/new.png" alt="new" class="new-games__img">
                     </div>
                     <div class="new-games__block">
                         <ul class="new-games__list">
+                            <!-- music -->
                             <li class="game-description__item">
-                                <img src="" alt="game-pic" class="game-description__pic">
-                                <div class="game-description__info">
-                                    <div class="time">
-                                        <img class="time__logo" src="" alt="clock"></img>
-                                        <div class="time__info">
-                                            90 минут
-                                        </div>
-                                    </div>
-                                    <div class="questions">
-                                        <img class="questions__logo" src="" alt="questions"></img>
-                                        <div class="questions__info">
-                                            70 вопросов
-                                        </div>
-                                    </div>
-                                </div>
-                                <article class="game-text">
-                                    <h5 class="game-text__header">
+                                <img src="./img/context/music-quiz.png" alt="game-pic" class="game-description__pic">
+                                <div class="new-games__inner">
+                                    <h5 class="game-title">
                                         Музыкальная игра
                                     </h5>
-                                    <p class="game-text__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consectetur
-                                        quisquam, sed sunt obcaecati excepturi similique doloremque sit delectus facilis
-                                        ipsa a iste totam culpa assumenda quibusdam. Perferendis, magnam quae?
-                                    </p>
-                                </article>
-                                <a href="#" class="new-games__btn btn">
-                                    Смотреть
-                                </a>
-                            </li>
-                            <li class="game-description__item">
-                                <img src="" alt="game-pic" class="game-description__pic">
-                                <div class="game-description__info">
-                                    <div class="time">
-                                        <img class="time__logo" src="" alt="clock"></img>
-                                        <div class="time__info">
-                                            90 минут
+                                    <div class="game-description__info">
+                                        <div class="time">
+                                            <img class="time__img" src="./img/icons/clock.png" alt="clock"></img>
+                                            <div class="time__info">
+                                                90 минут
+                                            </div>
+                                        </div>
+                                        <div class="questions">
+                                            <img class="questions__img" src="./img/icons/qa.png" alt="questions"></img>
+                                            <div class="questions__info">
+                                                70 вопросов
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="questions">
-                                        <img class="questions__logo" src="" alt="questions"></img>
-                                        <div class="questions__info">
-                                            70 вопросов
-                                        </div>
-                                    </div>
+                                    <article class="game-text">
+                                        Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение
+                                        систем массового участия.
+                                    </article>
+                                    <a href="#" class="new-games__btn btn">
+                                        Смотреть
+                                    </a>
                                 </div>
-                                <article class="game-text">
-                                    <h5 class="game-text__header">
-                                        Назад в 90-ые
+                            </li>
+                            <!-- back to 90s -->
+                            <li class="game-description__item">
+                                <img src="./img/context/back90.png" alt="game-pic" class="game-description__pic">
+                                <div class="new-games__inner">
+                                    <h5 class="game-title">
+                                        Назад в 90-е
                                     </h5>
-                                    <p class="game-text__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consectetur
-                                        quisquam, sed sunt obcaecati excepturi similique doloremque sit delectus facilis
-                                        ipsa a iste totam culpa assumenda quibusdam. Perferendis, magnam quae?
-                                    </p>
-                                </article>
-                                <a href="#" class="new-games__btn btn">
-                                    Смотреть
-                                </a>
-                            </li>
-                            <li class="game-description__item">
-                                <img src="" alt="game-pic" class="game-description__pic">
-                                <div class="game-description__info">
-                                    <div class="time">
-                                        <img class="time__logo" src="" alt="clock"></img>
-                                        <div class="time__info">
-                                            90 минут
+                                    <div class="game-description__info">
+                                        <div class="time">
+                                            <img class="time__img" src="./img/icons/clock.png" alt="clock"></img>
+                                            <div class="time__info">
+                                                90 минут
+                                            </div>
+                                        </div>
+                                        <div class="questions">
+                                            <img class="questions__img" src="./img/icons/qa.png" alt="questions"></img>
+                                            <div class="questions__info">
+                                                70 вопросов
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="questions">
-                                        <img class="questions__logo" src="" alt="questions"></img>
-                                        <div class="questions__info">
-                                            70 вопросов
-                                        </div>
-                                    </div>
+                                    <article class="game-text">
+                                        Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение
+                                        систем массового участия.
+                                    </article>
+                                    <a href="#" class="new-games__btn btn">
+                                        Смотреть
+                                    </a>
                                 </div>
-                                <article class="game-text">
-                                    <h5 class="game-text__header">
+                            </li>
+                            <!-- it-quiz -->
+                            <li class="game-description__item">
+                                <img src="./img/context/quiz_it.png" alt="game-pic" class="game-description__pic">
+                                <div class="new-games__inner">
+                                    <h5 class="game-title">
                                         IT-викторина
                                     </h5>
-                                    <p class="game-text__text">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consectetur
-                                        quisquam, sed sunt obcaecati excepturi similique doloremque sit delectus facilis
-                                        ipsa a iste totam culpa assumenda quibusdam. Perferendis, magnam quae?
-                                    </p>
-                                </article>
-                                <a href="#" class="new-games__btn btn">
-                                    Смотреть
-                                </a>
+                                    <div class="game-description__info">
+                                        <div class="time">
+                                            <img class="time__img" src="./img/icons/clock.png" alt="clock"></img>
+                                            <div class="time__info">
+                                                90 минут
+                                            </div>
+                                        </div>
+                                        <div class="questions">
+                                            <img class="questions__img" src="./img/icons/qa.png" alt="questions"></img>
+                                            <div class="questions__info">
+                                                70 вопросов
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <article class="game-text">
+                                        Равным образом постоянное обеспечение нашей деятельности позволяет оценить значение
+                                        систем массового участия.
+                                    </article>
+                                    <a href="#" class="new-games__btn btn">
+                                        Смотреть
+                                    </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </section>
+            </div>
 
-                <!-- past games -->
+            <!-- past games -->
+            <div class="container past-games__container">
                 <section class="past-games">
-                    <h2 class="subtitle">Прошедшие игры</h2>
+                    <div class="past-games__subtitle">Прошедшие игры</div>
                     <ul class="past-games__list">
                         <li class="past-games__item">
-                            <img src="" alt="game-photo" class="games__photo">
-                            <date class="date"> 1 января</date>
-                            <h5 class="past-games__header">
-                                Новогодний квиз
-                            </h5>
-                            <article class="past-games__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse maiores autem
-                                tenetur facere, repellat veniam nam! Excepturi corrupti magni, commodi illo accusantium
-                                cum
-                                voluptatem consequatur, omnis nulla enim tempora!
-                            </article>
+                            <img src="./img/context/newyearquiz.png" alt="game-photo" class="games__photo">
+                            <div class="text-on-img">
+                                <date class="past-games__date"> 1 января</date>
+                                <div class="past-games__title">
+                                    Новогодний квиз
+                                </div>
+                                <article class="past-games__text">
+                                    Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!
+                                </article>
+                            </div>
                         </li>
                         <li class="past-games__item">
-                            <img src="" alt="game-photo" class="games__photo">
-                            <date class="date"> 8 марта</date>
-                            <h5 class="past-games__header">
-                                Весенняя игра
-                            </h5>
-                            <article class="past-games__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse maiores autem
-                                tenetur facere, repellat veniam nam! Excepturi corrupti magni, commodi illo accusantium
-                                cum
-                                voluptatem consequatur, omnis nulla enim tempora!
-                            </article>
+                            <img src="./img/context/spring_game.png" alt="game-photo" class="games__photo">
+                            <div class="text-on-img">
+                                <date class="past-games__date"> 8 марта</date>
+                                <div class="past-games__title">
+                                    Весенняя игра
+                                </div>
+                                <article class="past-games__text">
+                                    Успевайте забронировать даты. Пока еще есть места на декабрь. Удачи и всех благ!
+                                </article>
+                            </div>
                         </li>
                     </ul>
                     <div class="paginator">
                         <div class="paginator__display">
                             Страница 1 из 7
                         </div>
-                        <ul class="paginator__item">1</ul>
-                        <ul class="paginator__item">2</ul>
-                        <ul class="paginator__item">3</ul>
-                        <ul class="paginator__item">4</ul>
-                        <ul class="paginator__item">5</ul>
-                        <ul class="paginator__item">6</ul>
-                        <ul class="paginator__item">7</ul>
+                        <ul class="paginator__list">
+                            <li class="paginator__item"><a href="#" class="page">1</a></li>
+                            <li class="paginator__item"><a href="#" class="page">2</a></li>
+                            <li class="paginator__item"><a href="#" class="page">3</a></li>
+                            <li class="paginator__item"><a href="#" class="page">4</a></li>
+                            <li class="paginator__item"><a href="#" class="page">5</a></li>
+                            <li class="paginator__item"><a href="#" class="page">6</a></li>
+                            <li class="paginator__item"><a href="#" class="page">7</a></li>
+                        </ul>
                     </div>
                 </section>
+            </div>
 
-                <!-- about us-->
+            <!-- about us-->
+            <div class="container aboutus__container">
                 <section class="aboutus">
+                    <img src="./img/context/aboutus.png" alt="our_photo" class="aboutus__img">
                     <article class="aboutus__article">
-                        <img src="" alt="our_photo" class="aboutus__img">
                         <h2 class="aboutus__title">О нас</h2>
-                        <p class="aboutus__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, recusandae excepturi ab
-                            illum
-                            blanditiis quasi consectetur quisquam cumque aperiam labore. Quas in illum aspernatur
-                            eligendi
-                            consectetur aperiam ratione doloribus sunt!
-                        </p>
+                        <div class="aboutus__text">
+                            Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                        </div>
+                        <a href="#" class="aboutus__btn btn">
+                            Подробнее
+                        </a>
                     </article>
-                    <a href="#" class="aboutus__btn btn">
-                        Подробнее
-                    </a>
                 </section>
-            </main>
+            </div>
+        </main> 
+    
 
-            <!-- Footer -->
+        <!-- Footer -->
+        <div class="container footer__container">
             <footer class="footer">
-                <!--logo-->
-                <a href="/" class="logo-text">
+                <hr class="footer__hr">
+                <a href="/" class="footer-logo logo">
                     Quiz-box
                 </a>
-                <!--navigation TODO-->
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            Главная
+                            <a href="/" class="navigation__link">Главная</a>
                         </li>
                         <li class="navigation__item">
-                            Игры
+                            <a href="#" class="navigation__link">Игры</a>
                         </li>
                         <li class="navigation__item">
-                            Отзывы
+                            <a href="#" class="navigation__link">Отзывы</a>
                         </li>
                     </ul>
                 </nav>
-                <!--social media-->
-                <div class="social-media">
-                    <ul class="social-media__list">
+                <ul class="social-media__list">
                         <li class="social-media__item">
                             <a href="#" class="sm__pic">
-                                <img src="" alt="tg">
+                                <img src="./img/icons/tg.png" alt="tg">
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="sm__pic">
-                                <img src="" alt="vk">
+                                <img src="./img/icons/vk.png" alt="vk">
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="sm__pic">
-                                <img src="" alt="fb">
+                                <img src="./img/icons/fb.png" alt="fb">
                             </a>
                         </li>
                         <li class="social-media__item">
                             <a href="#" class="sm__pic">
-                                <img src="" alt="ig">
+                                <img src="./img/icons/ig.png" alt="ig">
                             </a>
                         </li>
-                    </ul>
-                </div>
-                <!--footer contacts-->
+                </ul>
                 <address class="footer__contacts">
                     <div class="footer__contacts-info">
                         Бесплатный звонок по России
