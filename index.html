@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper wrapper__main">
         <!-- Header -->
-        <div class="container header__container">
-            <header class="header">
+        <header class="header">
+            <div class="container header__container">
                 <!--logo-->
-                <a href="/" class="header-logo logo">
+                <a href="Page-markup/" class="header-logo logo">
                     Quiz-box
                 </a>
                 <!--navigation TODO-->
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a href="" class="navigation__link">Главная</a>
+                            <a href="" class="navigation__link navigation__link--active">Главная</a>
                         </li>
                         <li class="navigation__item">
                             <a href="" class="navigation__link">Игры</a>
@@ -38,14 +38,15 @@
                         График работы
                     </div>
                 </address>
-            </header>
-        </div>
+            </div>
+        </header>
 
         <!-- Main page -->
         <main class="main">
             <!-- description -->
-            <div class="container hero__container">
-                <section class="description">
+            <section class="description">
+                <div class="container hero__container">
+                
                     <h1 class="title">Интеллектуальный вечер для шумной компании</h1>
                     <div class="description__text">
                         Игры на любой вкус
@@ -53,12 +54,12 @@
                     <a href="#" class="description__btn btn">
                         Подробнее
                     </a>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <!-- new games -->
-            <div class="container new-games__container">
-                <section class="new-games">
+            <section class="new-games">
+                <div class="container new-games__container">
                     <div class="new-games__title">
                         <h2 class="subtitle">Новинки недели</h2>
                         <img src="./img/icons/new.png" alt="new" class="new-games__img">
@@ -157,12 +158,12 @@
                             </li>
                         </ul>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <!-- past games -->
-            <div class="container past-games__container">
-                <section class="past-games">
+            <section class="past-games">
+                <div class="container past-games__container">
                     <div class="past-games__subtitle">Прошедшие игры</div>
                     <ul class="past-games__list">
                         <li class="past-games__item">
@@ -195,7 +196,7 @@
                             Страница 1 из 7
                         </div>
                         <ul class="paginator__list">
-                            <li class="paginator__item"><a href="#" class="page">1</a></li>
+                            <li class="paginator__item paginator__item--active"><a href="#" class="page">1</a></li>
                             <li class="paginator__item"><a href="#" class="page">2</a></li>
                             <li class="paginator__item"><a href="#" class="page">3</a></li>
                             <li class="paginator__item"><a href="#" class="page">4</a></li>
@@ -204,12 +205,12 @@
                             <li class="paginator__item"><a href="#" class="page">7</a></li>
                         </ul>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <!-- about us-->
-            <div class="container aboutus__container">
-                <section class="aboutus">
+            <section class="aboutus">
+                <div class="container aboutus__container">
                     <img src="./img/context/aboutus.png" alt="our_photo" class="aboutus__img">
                     <article class="aboutus__article">
                         <h2 class="aboutus__title">О нас</h2>
@@ -220,22 +221,21 @@
                             Подробнее
                         </a>
                     </article>
-                </section>
-            </div>
+                </div>
+            </section>
         </main> 
     
-
         <!-- Footer -->
-        <div class="container footer__container">
-            <footer class="footer">
-                <hr class="footer__hr">
-                <a href="/" class="footer-logo logo">
+        <footer class="footer">
+            <div class="container footer__container">
+                <!-- <hr class="footer__hr"> -->
+                <a href="Page-markup/" class="footer-logo logo">
                     Quiz-box
                 </a>
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a href="/" class="navigation__link">Главная</a>
+                            <a href="Page-markup/" class="navigation__link navigation__link--active">Главная</a>
                         </li>
                         <li class="navigation__item">
                             <a href="#" class="navigation__link">Игры</a>
@@ -273,8 +273,8 @@
                     </div>
                     <a href="tel:+78007003030" class="footer__phone">8 800 700 30 30</a>
                 </address>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
 </body>
 
